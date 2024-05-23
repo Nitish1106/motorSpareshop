@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Spare Parts Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Motor Spare Parts</a>
+            <div>
+                <a href="#services" class="text-gray-300 hover:text-white mx-4">Services</a>
+                <a href="#parts" class="text-gray-300 hover:text-white mx-4">Parts</a>
+                <a href="#contact" class="text-gray-300 hover:text-white mx-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen text-white flex items-center" style="background-image: url('{% static 'motor_cycle.jpeg' %}');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Our Motor Spare Parts Shop</h1>
+            <p class="text-xl mb-8">Quality parts for your motor vehicles</p>
+            <a href="#parts" class="bg-blue-600 px-6 py-3 rounded-full text-xl font-semibold hover:bg-blue-700">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Our Services</h2>
+            <div class="flex justify-center space-x-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-cogs text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Maintenance</h3>
+                    <p>Expert maintenance services for your vehicles.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-tools text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Repairs</h3>
+                    <p>Comprehensive repair services to keep you on the road.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-car text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Parts Replacement</h3>
+                    <p>High-quality parts replacement services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parts Section -->
+    <section id="parts" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">Our Parts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Part Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="{% static 'motor_engine.jpeg' %}" alt="Part Image" class="mb-4 w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Engine Part</h3>
+                    <p class="text-gray-700 mb-2">Specs: XYZ, Model: 1234</p>
+                    <p class="text-gray-900 font-bold">$250</p>
+                </div>
+                <!-- Part Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="{% static 'wheel.jpeg' %}" alt="Part Image" class="mb-4 w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Tire</h3>
+                    <p class="text-gray-700 mb-2">Specs: ABC, Model: 5678</p>
+                    <p class="text-gray-900 font-bold">$100</p>
+                </div>
+                <!-- Part Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="{% static 'disc_pad.jpeg' %}" alt="Part Image" class="mb-4 w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-2xl font-bold mb-2">Brake Pads</h3>
+                    <p class="text-gray-700 mb-2">Specs: DEF, Model: 9101</p>
+                    <p class="text-gray-900 font-bold">$75</p>
+                </div>
+                <!-- Add more part cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-4">Have any questions? Feel free to reach out to us!</p>
+            <p><i class="fas fa-phone-alt mr-2"></i> (123) 456-7890</p>
+            <p><i class="fas fa-envelope mr-2"></i> info@motorspareparts.com</p>
+            <p><i class="fas fa-map-marker-alt mr-2"></i> 1234 Street Name, City, State</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-4 text-center">
+        &copy; 2024 Motor Spare Parts. All rights reserved.
+    </footer>
+
+</body>
+</html>
