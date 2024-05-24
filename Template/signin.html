@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +14,6 @@
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-bold">Motor Spare Parts</a>
-            <div>
-                <a href="#services" class="text-gray-300 hover:text-white mx-4">Services</a>
-                <a href="#parts" class="text-gray-300 hover:text-white mx-4">Parts</a>
-                <a href="#contact" class="text-gray-300 hover:text-white mx-4">Contact</a>
-                <a href="signup.html" class="text-gray-300 hover:text-white mx-4">Sign Up</a>
-            </div>
-        </div>
-    </nav>
 
     <!-- Sign In Form -->
     <div class="min-h-screen flex items-center justify-center">
@@ -49,10 +40,8 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-4 text-center mt-8">
-        &copy; 2024 Motor Spare Parts. All rights reserved.
-    </footer>
+   
 
 </body>
 </html>
+{%endblock%}
